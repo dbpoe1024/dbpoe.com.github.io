@@ -1,0 +1,13 @@
+
+html, body, nav, header, article, div, h1, h5
+{
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+nav, header, article, section
+{
+    display: block;
+}

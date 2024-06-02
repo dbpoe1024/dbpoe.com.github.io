@@ -1,268 +1,61 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1280px)
+*
 {
-    header h1
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body
+{
+    background-image: url(../image/sky.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #4C4D4D;
+    font-size: 14px;
+}
+
+nav
+{
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+nav section
+{
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 3em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+@media screen and (max-width: 480px)
+{
+    nav section
     {
-        font-size: 2em;
+        font-size: 0.8em;
+        line-height: 3.8em;
     }
 }
-@media screen and (max-width: 1280px)
+h1
 {
-    article.obituary
-    {
-        padding: 3em 3.5em;
-    }
-}
-@media screen and (max-width: 1024px)
-{
-    header h1
-    {
-        font-size: 1.60em;
-    }
-}
-@media screen and (max-width: 1024px)
-{
-    h5
-    {
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 1023px)
-{
-    header
-    {
-        width: 30%;
-    }
+    font-size: 3.5em;
+    padding-bottom: 0.1em;
 }
 @media screen and (max-width: 1023px)
 {
     h1
     {
         font-size: 3.25em;
-    }
-}
-@media screen and (max-width: 1023px)
-{
-    main
-    {
-        width: 70%;
-        margin-left: 30%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-@media screen and (max-width: 1023px)
-{
-    article.obituary
-    {
-        padding: 2em 3em;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    body
-    {
-        -webkit-transform: none !important;
-        -ms-transform: none !important;
-        transform: none !important;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    body::after
-    {
-        background-position: center;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    header
-    {
-        position: relative;
-        width: 100%;
-        max-width: none;
-        height: auto;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    header section
-    {
-        padding-bottom: 2em;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    header h1
-    {
-        font-size: 2em;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    h5
-    {
-        font-size: 1.1em; 
-    }
-}
-/* @media screen and (max-width: 768px)
-{
-    div.obit-image
-    {
-        display: inline-block;
-        vertical-align: middle;
-        padding-bottom: 0;
-    }
-} */
-/* @media screen and (max-width: 768px)
-{
-    div.obit-image img
-    {
-        max-width: 150px;
-    }
-} */
-@media screen and (max-width: 768px)
-{
-    div.text-container
-    {
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 1em;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    main
-    {
-        width: 100%;
-        min-height: 0;
-        padding-top: 30vh;
-        margin-left: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    header > section
-    {
-        position: relative;
-        max-height: 180px;
-        min-height: 180px;
-        flex-direction: row;
-    }
-}
-@media screen and (max-width: 768px)
-{    div.text-container
-    {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    .obit-image
-    {
-        min-height: 150px;
-        max-width: 150px;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    #wrapper main
-    {
-        padding-top: 80px!important;
-    }
-}
-@media screen and (max-width: 768px)
-{
-    #wrapper article.obituary
-    {
-        padding: 2rem 1rem;
-    }
-}
-@media screen and (max-width: 480px)
-{
-    header
-    {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 1em;
-    }
-}
-@media screen and (max-width: 480px)
-{
-    header section
-    {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding-bottom: 1em;
-    }
-}
-@media screen and (max-width: 480px)
-{
-    header > section
-    {
-        max-height: 140px;
-        min-height: 140px;
-    }
-}
-@media screen and (max-width: 480px)
-{
-    header h1
-    {
-        font-size: 1.75em;
-    }
-}
-@media screen and (max-width: 480px)
-{
-    h5
-    {
-        font-size: .9em;
-    }
-}
-/* @media screen and (max-width: 480px)
-{
-    div.obit-image img
-    {
-        border: 2.5px solid white;
-        max-width: 125px;
-    } 
-} */
-@media screen and (max-width: 480px)
-{
-    main
-    {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 100px!important;
-    }
-}
-/* @media screen and (max-width: 480px)
-{
-    div.obit-image img
-    {
-        max-width: 125px;
-        width: 125px;
-        height: 125px;
-        margin: 0;
-    }
-} */
-@media screen and (max-width: 480px)
-{
-    div.text-container
-    {
-        min-height: 125px;
-        flex: 1;
     }
 }
 @media screen and (max-width: 480px)
@@ -273,33 +66,30 @@
         padding-bottom: 0.2em;
     }
 }
-@media screen and (max-width: 480px)
+h5
 {
-    article.obituary
+    font-size: 1.1em;
+    font-weight: 300;
+}
+@media screen and (max-width: 1024px)
+{
+    h5
     {
-        padding: 2em;
+        font-size: 1em;
     }
 }
-/* @media screen and (max-width: 480px)
+@media screen and (max-width: 768px)
 {
-    .obit-image
+    h5
     {
-        min-height: 125px;
-        max-width: 125px;
-    }
-} */
-@media screen and (max-width: 480px)
-{
-    #wrapper article.obituary
-    {
-        padding: 2rem 1rem; 
+        font-size: 1.1em;
     }
 }
-@media screen and (max-width: 380px)
+@media screen and (max-width: 480px)
 {
-    header h1
+    h5
     {
-        font-size: 1.25em;
+        font-size: .9em;
     }
 }
 @media screen and (max-width: 380px)
@@ -309,119 +99,226 @@
         font-size: .7em;
     }
 }
-
-body
-{
-    background-image: url(../image/sky.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-size: 14px;
-}
-header > section
-{
-    display: flex;
-    flex-direction: column;
-}
 article.obituary
 {
-    padding-top: 1em;
-    padding: 4em 4.5em;
-    margin-bottom: 2em;
     border-radius: 5px;
+    margin-bottom: 2em;
+    padding: 4em 4.5em;
+    padding-top: 1em;
 }
-article.obituary .text-fade
+@media screen and (max-width: 1280px)
 {
-    overflow: hidden;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, white), to(rgba(255, 255, 255, 0)));
-    -webkit-mask-image: linear-gradient(white 65%, rgba(255, 255, 255, 0) 100%);
-    mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, white), to(rgba(255, 255, 255, 0)));
-    mask-image: linear-gradient(white 65%, rgba(255, 255, 255, 0) 100%);
+    article.obituary
+    {
+        padding: 3em 3.5em;
+    }
 }
-img
+@media screen and (max-width: 1023px)
 {
-    margin-top: 15px;
-    margin-left: 15px;
-    border: 5px solid #FFF;
-    border-radius: 25px;
+    article.obituary
+    {
+        padding: 2em 3em;
+    }
 }
-div.text-container
+@media screen and (max-width: 480px)
 {
-    flex: 0;
-}
-h1
-{
-    font-size: 3.5em;
-    padding-bottom: 0.1em;
-}
-h5
-{
-    text-transform: uppercase;
-    padding-bottom: 0.5em;
-    font-weight: 300;
-    font-size: 1.1em;
+    article.obituary
+    {
+        padding: 2em;
+    }
 }
 p
 {
     font-size: 1rem;
-    /* line-height: 1.5em; */
     font-weight: normal;
-    /* padding-bottom: 1em; */
 }
 
-/* .obit-image
-{
-    min-height: 220px;
-} */
 .obit-text
 {
     color: #080808;
 }
 
+/* #wrapper */
+#wrapper body nav
+{
+    top: 0;
+}
 #wrapper body p
 {
     font-weight: 400;
 }
+@media screen and (max-width: 768px)
+{
+    #wrapper body
+    {
+        -webkit-transform: none !important;
+            -ms-transform: none !important;
+                transform: none !important;
+    }
+}
 #wrapper header
 {
-    width: 28%;
-    max-width: 450px;
-    height: 96%;
-    height: calc(100% - 3em);
-    position: fixed;
-    top: 0px;
-    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    z-index: 1;
+        justify-content: space-around;
+    height: 96%;
+    height: calc(100% - 3em);
+    width: 28%;
+    max-width: 450px;
     padding: 3%;
+    position: fixed;
+    top: 3em;
+    left: 0;
+    z-index: 1;
+}
+@media screen and (max-width: 1023px)
+{
+    #wrapper header
+    {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper header
+    {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper header
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1em;
+    }
 }
 #wrapper header section
 {
     padding-bottom: 50px
 }
+@media screen and (max-width: 768px)
+{
+    #wrapper header section
+    {
+        padding-bottom: 2em;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper header section
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        padding-bottom: 1em;
+    }
+}
+#wrapper div.obit-image
+{
+    padding-bottom: 1em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper div.obit-image
+    {
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 0;
+    }
+}
+#wrapper div.obit-image img
+{
+    border: 5px solid #FFF;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    max-width: 500px;
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper div.obit-image img
+    {
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper div.obit-image img
+    {
+        max-width: 125px;
+    }
+}
 #wrapper header h1
 {
     font-size: 2.39em;
 }
-/* #wrapper div.obit-image
+@media screen and (max-width: 1280px)
 {
-    padding-bottom: 1em;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-} */
-#wrapper div.text-container
+    #wrapper header h1
+    {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    #wrapper header h1
+    {
+        font-size: 1.60em;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper header h1
+    {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper header h1
+    {
+        font-size: 1.75em;
+    }
+}
+@media screen and (max-width: 380px)
+{
+    #wrapper header h1
+    {
+        font-size: 1.25em;
+    }
+}
+#wrapper div.info
 {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper div.info
+    {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 1em;
+    }
 }
 #wrapper main
 {
@@ -430,37 +327,60 @@ p
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 28%;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 300px!important;
-    min-height: auto!important;
     padding-left: 8%;
     padding-right: 8%;
+    margin-left: 28%;
+    min-height: auto!important;
+    width: 72%;
 }
 #wrapper main > *
 {
     margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+}
+@media screen and (max-width: 1023px)
+{
+    #wrapper main
+    {
+        width: 70%;
+        margin-left: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper main
+    {
+        width: 100%;
+        min-height: 0;
+        padding-top: 30vh;
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper main
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 100px!important;
+    }
 }
 #wrapper article.obituary
 {
     background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid #DDDDDD;
-}
-#wrapper article.obituary .obit-text
-{
-    max-height: 20vh;
-    padding-top: 1em;
+    border: 1px solid #DDD;
 }
 #wrapper article.obituary .obit-text p
 {
-    line-height: 1.5em;
     font-size: 1.2em;
     font-weight: normal;
-}
-#wrapper article.obituary .obit-text div
-{
     line-height: 1.5em;
-    font-size: 1.2em;
-    font-weight: normal;
 }

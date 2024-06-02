@@ -13,7 +13,6 @@ body
     color: #4C4D4D;
     font-size: 14px;
 }
-
 nav
 {
     background-color: rgba(255, 255, 255, 0.75);
@@ -138,7 +137,6 @@ p
     color: #080808;
 }
 
-/* #wrapper */
 #wrapper body nav
 {
     top: 0;

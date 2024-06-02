@@ -10,8 +10,7 @@ body
     background-image: url(../image/sky.png);
     background-attachment: fixed;
     background-size: cover;
-    color: #4C4D4D;
-    font-size: 14px;
+    font-family: 'Open Sans 14px', sans-serif;
 }
 nav
 {
@@ -50,7 +49,7 @@ h1
     font-size: 3.5em;
     padding-bottom: 0.1em;
 }
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1024px)
 {
     h1
     {
@@ -112,7 +111,7 @@ article.obituary
         padding: 3em 3.5em;
     }
 }
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1024px)
 {
     article.obituary
     {
@@ -164,7 +163,6 @@ p
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 96%;
     height: calc(100% - 3em);
     width: 28%;
     max-width: 450px;
@@ -174,7 +172,7 @@ p
     left: 0;
     z-index: 1;
 }
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1024px)
 {
     #wrapper header
     {
@@ -185,12 +183,12 @@ p
 {
     #wrapper header
     {
-        position: relative;
+        height: auto;
         width: 100%;
         max-width: none;
-        height: auto;
         padding-left: 5%;
         padding-right: 5%;
+        position: relative;
     }
 }
 @media screen and (max-width: 480px)
@@ -244,17 +242,17 @@ p
 }
 #wrapper div.obit-image img
 {
+    max-width: 500px;
     border: 5px solid #FFF;
     border-radius: 25px;
     margin-top: 15px;
     margin-left: 15px;
-    max-width: 500px;
 }
 @media screen and (max-width: 768px)
 {
     #wrapper div.obit-image img
     {
-        max-width: 150px;
+        max-width: 250px;
     }
 }
 @media screen and (max-width: 480px)
@@ -327,20 +325,14 @@ p
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: auto!important;
+    width: 72%;
+    margin-left: 28%;
     padding-top: 300px!important;
     padding-left: 8%;
     padding-right: 8%;
-    margin-left: 28%;
-    min-height: auto!important;
-    width: 72%;
 }
-#wrapper main > *
-{
-    margin: 0 auto;
-    max-width: 950px;
-    width: 100%;
-}
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1024px)
 {
     #wrapper main
     {
@@ -354,10 +346,10 @@ p
 {
     #wrapper main
     {
-        width: 100%;
         min-height: 0;
-        padding-top: 30vh;
+        width: 100%;
         margin-left: 0;
+        padding-top: 80px!important;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -366,15 +358,35 @@ p
 {
     #wrapper main
     {
+        padding-top: 100px!important;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 100px!important;
     }
+}
+#wrapper main > *
+{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
 }
 #wrapper article.obituary
 {
     background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid #DDD;
+}
+@media screen and (max-width: 768px)
+{
+    #wrapper article.obituary
+    {
+        padding: 2rem 1rem; 
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #wrapper article.obituary
+    {
+        padding: 2rem 1rem; 
+    }
 }
 #wrapper article.obituary .obit-text p
 {

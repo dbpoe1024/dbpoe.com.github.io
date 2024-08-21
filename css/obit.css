@@ -2,28 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Sedan&display=swap');
 
-*
-{
+* {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
-body
-{
+body {
     background-image: url(../image/sky.png);
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Prata';
 }
-nav
-{
+nav {
     background-color: rgba(255, 255, 255, 0.75);
     position: fixed;
     width: 100%;
     z-index: 4;
 }
-nav section
-{
+nav section {
     -js-display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,130 +35,99 @@ nav section
     margin: 0 auto;
     padding: 0 1em;
 }
-@media screen and (max-width: 480px)
-{
-    nav section
-    {
+@media screen and (max-width: 480px) {
+    nav section {
         font-size: 0.8em;
         line-height: 3.8em;
     }
 }
-h1
-{
+h1 {
     font-size: 3.5em;
     padding-bottom: 0.1em;
 }
-@media screen and (max-width: 1024px)
-{
-    h1
-    {
+@media screen and (max-width: 1024px) {
+    h1 {
         font-size: 3.25em;
     }
 }
-@media screen and (max-width: 480px)
-{
-    h1
-    {
+@media screen and (max-width: 480px) {
+    h1 {
         font-size: 2.75em;
         padding-bottom: 0.2em;
     }
 }
-h5
-{
+h5 {
     font-size: 1.1em;
     font-weight: 300;
 }
-@media screen and (max-width: 1024px)
-{
-    h5
-    {
+@media screen and (max-width: 1024px) {
+    h5 {
         font-size: 1em;
     }
 }
-@media screen and (max-width: 768px)
-{
-    h5
-    {
+@media screen and (max-width: 768px) {
+    h5 {
         font-size: 1.1em;
     }
 }
-@media screen and (max-width: 480px)
-{
-    h5
-    {
+@media screen and (max-width: 480px) {
+    h5 {
         font-size: .9em;
     }
 }
-@media screen and (max-width: 380px)
-{
-    h5
-    {
+@media screen and (max-width: 380px) {
+    h5 {
         font-size: .7em;
     }
 }
-strong
-{
+strong {
     font-weight: bold!important;
 }
-article.obituary
-{
+article.obituary {
     border-radius: 5px;
     margin-bottom: 2em;
     padding: 4em 4.5em;
     padding-top: 1em;
 }
-@media screen and (max-width: 1280px)
-{
-    article.obituary
-    {
+@media screen and (max-width: 1280px) {
+    article.obituary {
         padding: 3em 3.5em;
     }
 }
-@media screen and (max-width: 1024px)
-{
-    article.obituary
-    {
+@media screen and (max-width: 1024px) {
+    article.obituary {
         padding: 2em 3em;
     }
 }
-@media screen and (max-width: 480px)
-{
-    article.obituary
-    {
+@media screen and (max-width: 480px) {
+    article.obituary {
         padding: 2em;
     }
 }
-p
-{
+p {
     font-size: 1rem;
     font-weight: normal;
 }
 
-.obit-text
-{
+.obit-text {
     color: #080808;
     font-family: 'Sedan';
 }
 
-#wrapper body nav
-{
+#wrapper body nav {
     top: 0;
 }
-#wrapper body p
-{
+#wrapper body p {
     font-weight: 400;
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper body
-    {
+@media screen and (max-width: 768px) {
+    #wrapper body {
         -webkit-transform: none !important;
             -ms-transform: none !important;
                 transform: none !important;
     }
 }
-#wrapper header
-{
+#wrapper header {
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
@@ -180,17 +145,13 @@ p
     left: 0;
     z-index: 1;
 }
-@media screen and (max-width: 1024px)
-{
-    #wrapper header
-    {
+@media screen and (max-width: 1024px) {
+    #wrapper header {
         width: 30%;
     }
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper header
-    {
+@media screen and (max-width: 768px) {
+    #wrapper header {
         height: auto;
         width: 100%;
         max-width: none;
@@ -199,30 +160,23 @@ p
         position: relative;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper header
-    {
+@media screen and (max-width: 480px) {
+    #wrapper header {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 1em;
     }
 }
-#wrapper header section
-{
+#wrapper header section {
     padding-bottom: 50px
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper header section
-    {
+@media screen and (max-width: 768px) {
+    #wrapper header section {
         padding-bottom: 2em;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper header section
-    {
+@media screen and (max-width: 480px) {
+    #wrapper header section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -232,121 +186,92 @@ p
         padding-bottom: 1em;
     }
 }
-#wrapper div.obit-image
-{
+#wrapper div.obit-image {
     padding-bottom: 1em;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper div.obit-image
-    {
+@media screen and (max-width: 768px) {
+    #wrapper div.obit-image {
         display: inline-block;
         vertical-align: middle;
         padding-bottom: 0;
     }
 }
-#wrapper div.obit-image img
-{
+#wrapper div.obit-image img {
     max-width: 500px;
     border: 5px solid #FFF;
     border-radius: 25px;
     margin-top: 15px;
     margin-left: 15px;
 }
-@media screen and (max-width: 1600px)
-{
-    #wrapper div.obit-image img
-    {
+@media screen and (max-width: 1600px) {
+    #wrapper div.obit-image img {
         max-width: 250px;
     }
 }
-@media screen and (max-width: 1275px)
-{
-    #wrapper div.obit-image img
-    {
+@media screen and (max-width: 1275px) {
+    #wrapper div.obit-image img {
         max-width: 200px;
     }
 }
-@media screen and (max-width: 1100px)
-{
-    #wrapper div.obit-image img
-    {
+@media screen and (max-width: 1100px) {
+    #wrapper div.obit-image img {
         max-width: 175px;
     }
 }
-@media screen and (max-width: 850px)
-{
-    #wrapper div.obit-image img
-    {
+@media screen and (max-width: 850px) {
+    #wrapper div.obit-image img {
         max-width: 150px;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper div.obit-image img
-    {
+@media screen and (max-width: 480px) {
+    #wrapper div.obit-image img {
         max-width: 125px;
     }
 }
-#wrapper header h1
-{
+#wrapper header h1 {
     font-size: 2.39em;
 }
-@media screen and (max-width: 1280px)
-{
-    #wrapper header h1
-    {
+@media screen and (max-width: 1280px) {
+    #wrapper header h1 {
         font-size: 2em;
     }
 }
-@media screen and (max-width: 1024px)
-{
-    #wrapper header h1
-    {
+@media screen and (max-width: 1024px) {
+    #wrapper header h1 {
         font-size: 1.60em;
     }
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper header h1
-    {
+@media screen and (max-width: 768px) {
+    #wrapper header h1 {
         font-size: 2em;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper header h1
-    {
+@media screen and (max-width: 480px) {
+    #wrapper header h1 {
         font-size: 1.75em;
     }
 }
-@media screen and (max-width: 380px)
-{
-    #wrapper header h1
-    {
+@media screen and (max-width: 380px) {
+    #wrapper header h1 {
         font-size: 1.25em;
     }
 }
-#wrapper div.info
-{
+#wrapper div.info {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper div.info
-    {
+@media screen and (max-width: 768px) {
+    #wrapper div.info {
         display: inline-block;
         vertical-align: middle;
         padding-left: 1em;
     }
 }
-#wrapper main
-{
+#wrapper main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -361,10 +286,8 @@ p
     padding-left: 8%;
     padding-right: 8%;
 }
-@media screen and (max-width: 1024px)
-{
-    #wrapper main
-    {
+@media screen and (max-width: 1024px) {
+    #wrapper main {
         width: 70%;
         margin-left: 30%;
         padding-top: 150px!important;
@@ -372,10 +295,8 @@ p
         padding-right: 5%;
     }
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper main
-    {
+@media screen and (max-width: 768px) {
+    #wrapper main {
         min-height: 0;
         width: 100%;
         margin-left: 0;
@@ -384,42 +305,33 @@ p
         padding-right: 5%;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper main
-    {
+@media screen and (max-width: 480px) {
+    #wrapper main {
         padding-top: 100px!important;
         padding-left: 15px;
         padding-right: 15px;
     }
 }
-#wrapper main > *
-{
+#wrapper main > * {
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
 }
-#wrapper article.obituary
-{
+#wrapper article.obituary {
     background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid #DDD;
 }
-@media screen and (max-width: 768px)
-{
-    #wrapper article.obituary
-    {
+@media screen and (max-width: 768px) {
+    #wrapper article.obituary {
         padding: 2rem 1rem;
     }
 }
-@media screen and (max-width: 480px)
-{
-    #wrapper article.obituary
-    {
+@media screen and (max-width: 480px) {
+    #wrapper article.obituary {
         padding: 2rem 1rem;
     }
 }
-#wrapper article.obituary .obit-text p
-{
+#wrapper article.obituary .obit-text p {
     font-size: 1.2em;
     font-weight: normal;
     line-height: 1.5em;
